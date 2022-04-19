@@ -592,7 +592,7 @@ img {
   border-radius: 50%;
   /* outline: 2px solid greenyellow; */
 
-  transition: color var(--transition), background-color var(--transition);
+  transition: background-color var(--transition);
 }
 
 .join-link:hover,
@@ -638,7 +638,7 @@ img {
   line-height: 1.62;
   letter-spacing: 0.03em;
 
-  transition: color var(--transition), background-color var(--transition);
+  transition: color var(--transition), background-color var(--transition), box-shadow var(--transition);
 }
 
 .button:hover,
@@ -668,6 +668,13 @@ img {
 
 .project-link {
   display: block;
+  transition: box-shadow var(--transition);
+}
+
+.project-link:hover,
+.project-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-wrapper {
@@ -696,12 +703,6 @@ img {
 
   transform: translateY(100%);
   transition: transform var(--transition);
-}
-
-.project-link:hover,
-.project-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-item:hover .project-descrip,
